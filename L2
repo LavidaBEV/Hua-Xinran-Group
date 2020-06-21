@@ -38,5 +38,4 @@ for i in range(pages):
     results = results+valueshtml(soup) # 调用获取列表值函数
 
 df = pd.DataFrame(results,columns=['投诉编号','投诉品牌','投诉车系','投诉车型','问题简述','典型问题','投诉时间','投诉状态'])
-#df = pd.DataFrame(results,columns = ['id','brand','car_model','type','desc','problem','datetime','status'])
 df.to_excel('car_complain.xlsx')
